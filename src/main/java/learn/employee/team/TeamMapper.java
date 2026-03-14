@@ -1,6 +1,7 @@
 package learn.employee.team;
 
 import org.mapstruct.Mapper;
+import java.util.List;
 
 @Mapper(componentModel = "spring")
 public interface TeamMapper {

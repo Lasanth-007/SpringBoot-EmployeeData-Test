@@ -8,5 +8,5 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 @RequestMapping("/employee")
 public class EmployeeController {
-    private final EmployeeController employeeController;
+    private final EmployeeServices employeeServices;
 }

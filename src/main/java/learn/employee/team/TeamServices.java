@@ -8,4 +8,9 @@ import org.springframework.stereotype.Service;
 public class TeamServices {
     private final TeamRepository teamRepository;
     private final TeamMapper teamMapper;
+
+    public TeamDto addTeam(TeamDto teamDto){
+        Team savedteam = teamRepository.save(teamMapper.toTeam(teamDto));
+        return teamMapper.toTeamDto(savedteam);
+    }
 }

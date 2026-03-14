@@ -17,7 +17,7 @@ public class Team {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
-    private Long name;
+    private String name;
     @OneToMany(
             mappedBy = "team"
     )
